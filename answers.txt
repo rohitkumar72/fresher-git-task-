@@ -1,1 +1,102 @@
-"Q1, Q2, Q3 answers here" 
+"Q1,  :
+Q1. Do the following 						[ 10 marks]
+
+a. Create a new private GitHub repository named fresher-git-task [ 1 mark]
+
+ans:--- screen shot in the folder
+
+b. Clone the repository to your local machine 			[1 mark]
+
+ans: ---- git clone https://github.com/rohitkumar72/fresher-git-task.git
+
+c. Inside the repository, create one file:				[1 mark]
+	answers.txt (add all 3 Question answers)
+	Commit and Push these files to the main branch 
+
+ans: --- 
+            echo "Q1, Q2, Q3 answers here" > answers.txt
+            git add answers.txt
+            git commit -m "Add answers file"
+            git push -u origin main
+
+d. Create a new branch called feature/login-page from main 	[1 mark]
+
+ans: ---git checkout -b feature/login-page
+
+e. On the feature/login-page branch, create a file named login.html (add any text 
+    content inside it). Commit and push this branch to GitHub.	[ 2 marks]
+
+ans:--- echo "<h1>Login Page</h1>" > login.html
+        git add login.html
+        git commit -m "Add login page"
+        git push -u origin feature/login-page
+
+f. Open a Pull Request (PR) on GitHub to merge feature/login-page into main.
+	Add a meaningful PR title and description
+	Provide a screenshot of your PR 				[2 marks]
+
+ans:---  screen in the folder
+
+g. Invite another GitHub user (mallikarjuna.hs@tibilsolutions.com) as a collaborator 
+     with Write access to your private repository.
+	Provide a screenshot showing the collaborator added. 	[2 marks]
+
+ans:--- screen shot 
+
+
+Q2. Network Information Task 					[ 5 marks ]
+Perform the following tasks on your laptop and provide the answers:
+1. Find and provide your laptop’s private IP address (local IP)         [1 mark]
+
+ans: --  IPv4 Address. . . . . . . . . . . : 192.168.1.128
+
+2. Find and provide your laptop’s public IP address (external IP)    	[1 mark]
+
+ans: --- IPv4: ? 49.249.50.178
+         IPv6: ? Not detected 
+3. Find and provide your laptop’s MAC (hardware) address. 	[1.5 marks]
+
+ans: -- Physical Address: 24-EE-9A-8E-2D-5D
+4. Write the command(s) or tool(s) you used to find this information.  [1.5 marks]
+
+ans:---- 1. for laptop’s private IP address i do cmd: ipconfig  For Private IP
+
+2. Find and provide your laptop’s public IP address
+ whatismyipaddress.com For Public IP
+
+3. laptop’s MAC (hardware) address
+
+cmd --> getmac /v /fo list → For MAC address
+
+
+
+
+
+Q3  ---
+Q3. Internet Connectivity Check 					[ 5 Marks ]
+Answer the following using simple terminal commands:
+1.	How can you check if your laptop has internet access? Provide one simple command.    
+Hint : You can try to ping a well-known website 		             [1 mark]
+
+ans: ---  ping -n 2 www.google.com
+
+2.	How can you check if a website (ex: www.google.com ) is reachable from your laptop?
+Provide one simple command					               [1 mark]
+Hint: Think of a basic command that shows replies if reachable
+
+ans: --- ping www.google.com
+
+
+3.	Write one command that shows your current network configuration (IP address etc)  
+Hint : Command like ipconfig (Windows) or ifconfig/ip addr (Linux/Mac)  [ 1 mark ]   
+
+ans : ---- ipconfig
+4.	How can you test your public IP using terminal or browser? Mention any one method            
+        [1 mark]    
+ans: -- curl ifconfig.me
+
+5.	Which command can you use to send continuous pings until you stop it manually											                 [ 1 mark]
+ans: --- ping www.google.com -t
+
+
+ 
